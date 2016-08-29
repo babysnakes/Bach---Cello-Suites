@@ -51,8 +51,8 @@ prelude = \context Staff \relative c {
   <<{s a[ s a] s a[ s a]} \\ {a[ s g] s a[ s fis] s}>> g a fis a g a e a |
   fis a d,\upbow( e) f\downbow d fis d g d gis d a' d, bes' d, |
   b' d, c' d, cis' d, d' d, ees' d, e' d, f' d, fis' d, |
-  g'( b, d,) b' g' b, g' b, g'( b, d,) b' g' b, g' b, |
-  g'( a, d,) a' g' a, g' a, g'( a, d,) a' g' a, g' a, |
-  fis'( c d,) c' fis c fis c fis( c d,) c' fis c fis c |
+  g' b,( d, b') g' b, g' b, g' b,( d, b') g' b, g' b, |
+  g' a,( d, a') g' a, g' a, g' a,( d, a') g' a, g' a, |
+  fis' c( d, c') fis c fis c fis c( d, c') fis c fis c |
   <g, b' g'>1\fermata | \bar "|."
 }
