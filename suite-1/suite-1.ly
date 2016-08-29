@@ -15,5 +15,8 @@
       \clef "bass" {\prelude}
     }
     \header { piece = "prelude"}
+    \layout {}
+    % uncomment the following line to generate midi.
+    % \midi {}
   }
 }
