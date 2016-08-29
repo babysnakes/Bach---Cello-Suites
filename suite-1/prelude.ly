@@ -19,7 +19,7 @@ prelude = \context Staff \relative c {
   e, (cis'_\open d) e d cis b a g' (fis e) d' cis b a g |
   fis (e d) d' a d fis, a d, e fis a g fis e d |
   gis (d f) e f d gis d b' (d, f) e f d gis d |
-  c (e a) b c a e d c (e a) b c a g f |
+  c (e a) b c a e d c (e a) b c a fis e |
   dis (fis dis) fis a fis a fis dis (fis dis) fis a fis a fis |
   g (fis e) g fis g a fis g fis e d c b a g |
   \fngrBelow <fis-3> \fngrBelow <c'-2> (d c) d c d c fis, c' (d c) d c d c |
@@ -36,8 +36,23 @@ prelude = \context Staff \relative c {
   d, g (b d) g a b g cis (b a bes) bes (a gis a) |
   a (g fis g) g (e cis b) a (cis e) g a cis d cis |
   d a fis e fis a d, fis a, d cis b a g fis e |
-  d8 c''16 (b a g fis e d) c' (b a g fis e d |
-  c) b' (a g fis e d c b) a' (g fis e d c b |
-  a) g' (fis e) fis a d, a' e a fis a g a e a |
+  \override Beam.auto-knee-gap = #3
+  d8 c''16\upbow (b a g fis e d) c'\downbow (b a g fis e d |
+  \override Beam.auto-knee-gap = #5.5 % TODO: can we reset this without specifying gap?
+  c-1) b'\upbow-4 (a-2 g-1 fis-3 e-1 d c-2 b-1) a'\downbow-4 (g-4 fis e d c b |
+  a) g'\upbow (fis e fis) a\downbow d, a' e a fis a g a e a |
   fis a d, a' g a e a fis a d, a' g a e a |
+  fis a d, a' e a fis a <<{s a[ s a] s a[ s a]}
+                          \\ {g[ s a] s b[ s d,] s}>> |
+  <<{s a'[ s a] s a[ s a] s a[ s a] s a[ s a]}
+    \\ {a[ s b] s c[ s d,] s b'[ s c] s d[ s b] s}>> |
+  <<{s a[ s a] s a[ s a] s a[ s a] s a[ s a]}
+    \\ {c[ s b] s c[ s a] s b[ s a] s b[ s g] s}>> |
+  <<{s a[ s a] s a[ s a]} \\ {a[ s g] s a[ s fis] s}>> g a fis a g a e a |
+  fis a d,\upbow( e) f\downbow d fis d g d gis d a' d, bes' d, |
+  b' d, c' d, cis' d, d' d, ees' d, e' d, f' d, fis' d, |
+  g'( b, d,) b' g' b, g' b, g'( b, d,) b' g' b, g' b, |
+  g'( a, d,) a' g' a, g' a, g'( a, d,) a' g' a, g' a, |
+  fis'( c d,) c' fis c fis c fis( c d,) c' fis c fis c |
+  <g, b' g'>1\fermata | \bar "|."
 }
