@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-fngrBelow =  \set fingeringOrientations = #'(down)
+\include "../helpers.ly"
 
 prelude = \context Staff \relative c {
 
