@@ -8,6 +8,7 @@
 }
 
 \include "prelude.ly"
+\include "allemande.ly"
 
 \book {
   \score {
@@ -27,6 +28,26 @@
       >>
     }
     \header { piece = "prelude"}
+    \layout {}
+    %% uncomment the following line to generate midi.
+    %% \midi {}
+  }
+
+  \score {
+    {
+      \clef "bass"
+      <<
+        \new Voice { % breaks
+          s16 \noBreak s1 \noBreak s1 \break
+          \repeat unfold 10 {
+            s1 \noBreak s1 \noBreak s1 \break
+          }
+          \pageBreak
+        }
+        \new Voice {\allemande}
+      >>
+    }
+    \header { piece = "allemande"}
     \layout {}
     %% uncomment the following line to generate midi.
     %% \midi {}
