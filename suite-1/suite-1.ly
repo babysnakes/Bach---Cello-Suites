@@ -10,6 +10,7 @@
 \include "prelude.ly"
 \include "allemande.ly"
 \include "courante.ly"
+\include "sarabande.ly"
 
 \book {
   \score {
@@ -77,6 +78,29 @@
     }
     \header {
       piece = "Courante"
+      opus = ##f
+    }
+    \layout {}
+    %% uncomment the following line to generate midi.
+    %% \midi {}
+  }
+
+  \score {
+    {
+      \clef "bass"
+      <<
+        \new Voice {
+          \repeat unfold 3 { s2. \noBreak } s \break
+          \repeat unfold 4 {
+            s \noBreak s \noBreak s \break
+          }
+          \pageBreak
+        }
+        \new Voice { \sarabande }
+      >>
+    }
+    \header {
+      piece = "Sarabande"
       opus = ##f
     }
     \layout {}
