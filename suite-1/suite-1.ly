@@ -11,6 +11,7 @@
 \include "allemande.ly"
 \include "courante.ly"
 \include "sarabande.ly"
+\include "minuet-I-II.ly"
 
 \book {
   \score {
@@ -65,19 +66,16 @@
       \clef "bass"
       <<
         \new Voice {
-          s8 \repeat unfold 3 s2. \break
-          \repeat unfold 2 { s2. s s s \break }
-          s s s \break
-          s s s s2 s8 \break
-          s8 s2. s s s \break
-          \repeat unfold 5 { s \noBreak s \noBreak s \noBreak s \break }
-          \pageBreak
+          \repeat unfold 3 { s2. \noBreak } s \break
+          \repeat unfold 4 {
+            s \noBreak s \noBreak s \break
+          }
         }
-        \new Voice { \courante }
-       >>
+        \new Voice { \sarabande }
+      >>
     }
     \header {
-      piece = "Courante"
+      piece = "Sarabande"
       opus = ##f
     }
     \layout {}
@@ -92,15 +90,15 @@
         \new Voice {
           \repeat unfold 3 { s2. \noBreak } s \break
           \repeat unfold 4 {
-            s \noBreak s \noBreak s \break
+            s \noBreak s \noBreak s \noBreak s\noBreak s\break
           }
           \pageBreak
         }
-        \new Voice { \sarabande }
+        \new Voice { \minuetI }
       >>
     }
     \header {
-      piece = "Sarabande"
+      piece = "Minuet I"
       opus = ##f
     }
     \layout {}
