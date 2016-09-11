@@ -35,3 +35,39 @@ minuetI = \context Staff \relative c' {
     <g, g'>2. | % 24
   }
 }
+
+minuetII = \context Staff \relative c' {
+
+  \time 3/4
+  \key d \minor
+  \set Staff.midiInstrument = "cello"
+
+  \repeat volta 2 {
+    bes8( a bes) d, ees g, | % 1
+    f!4 a' d, | % 2
+    g8( fis g) bes, c e, | % 3
+    d(a' d) g fis a | % 4
+    bes8( a bes) d, ees g, | % 5
+    f!4 a' d, | % 6
+    g8( fis g) bes, c e,! | % 7
+    d8( g') fis2 | % 8
+  }
+  \repeat volta 2 {
+    d8( fis a) c ees d | % 9
+    c( bes a bes) g4 | % 10
+    c,8( e g) bes d c | % 11
+    bes( a g a) f ees | % 12
+    d f bes( a bes) d, | % 13
+    ees g bes( a bes) d | % 14
+    c( ees) d( bes) f a | % 15
+    bes f d f bes,4 | % 16
+    b8( d f) aes g f | % 17
+    ees( g c) d ees4 | % 18
+    a,,8( c ees) g f ees | % 19
+    d( f bes) c d4 | % 20
+    fis,,8( a c) ees d c | % 21
+    bes( d g) a bes g | % 22
+    c, bes'( a g) d fis | % 23
+    g,2._\markup {\center-align "Minuet I da Capo" } | % 24
+  }
+}

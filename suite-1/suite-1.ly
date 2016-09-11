@@ -105,4 +105,25 @@
     %% uncomment the following line to generate midi.
     %% \midi {}
   }
+
+  \score {
+    {
+      \clef "bass"
+      <<
+        \new Voice {
+          \repeat unfold 4 {
+            s2. \noBreak s \noBreak s \noBreak s \noBreak s \noBreak s \break
+          }
+        }
+        \new Voice { \minuetII }
+      >>
+    }
+    \header {
+      piece = "Minuet II"
+      opus = ##f
+    }
+    \layout {}
+    %% uncomment the following line to generate midi.
+    %% \midi {}
+  }
 }
