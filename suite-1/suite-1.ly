@@ -12,6 +12,7 @@
 \include "courante.ly"
 \include "sarabande.ly"
 \include "minuet-I-II.ly"
+\include "gigue.ly"
 
 \book {
   \score {
@@ -120,6 +121,28 @@
     }
     \header {
       piece = "Minuet II"
+      opus = ##f
+    }
+    \layout {}
+    %% uncomment the following line to generate midi.
+    %% \midi {}
+  }
+
+  \score {
+    {
+      \clef "bass"
+      <<
+        \new Voice {
+          s8 \noBreak \repeat unfold 4 { s2. \noBreak } s \break
+          \repeat unfold 2 { \repeat unfold 5 { s \noBreak } s \break }
+          \repeat unfold 4 { s \noBreak } s \break
+          \repeat unfold 2 { \repeat unfold 5 { s \noBreak } s \break }
+        }
+        \new Voice { \gigue }
+      >>
+    }
+    \header {
+      piece = "Gigue"
       opus = ##f
     }
     \layout {}
