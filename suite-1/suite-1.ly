@@ -67,6 +67,31 @@
       \clef "bass"
       <<
         \new Voice {
+          s8 \repeat unfold 3 s2. \break
+          \repeat unfold 2 { s2. s s s \break }
+          s s s \break
+          s s s s2 s8 \break
+          s8 s2. s s s \break
+          \repeat unfold 5 { s \noBreak s \noBreak s \noBreak s \break }
+          \pageBreak
+        }
+        \new Voice { \courante }
+      >>
+    }
+    \header {
+      piece = "Courante"
+      opus = ##f
+    }
+    \layout {}
+    %% uncomment the following line to generate midi.
+    %% \midi {}
+  }
+
+  \score {
+    {
+      \clef "bass"
+      <<
+        \new Voice {
           \repeat unfold 3 { s2. \noBreak } s \break
           \repeat unfold 4 {
             s \noBreak s \noBreak s \break
