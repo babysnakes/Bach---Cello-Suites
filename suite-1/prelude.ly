@@ -16,9 +16,9 @@ prelude = \context Staff \relative c {
   \fngrBelow <cis-3>( g' a) g a g a g cis,( g' a) g a g a g |
   fis-1( a d) cis d a-4 g a fis a g a d, fis e d |
   \fngrBelow <e,-1>( b' g') fis g b, g' b, e,( b' g') fis g b, g' b, |
-  e,( cis'_\open d) e d cis b a g'( fis e) d' cis b a g |
+  e,( cis' d^\open) e d cis b a g'( fis e) d' cis b a g |
   fis( e d) d' a d fis, a d, e fis a g fis e d |
-  gis( d f) e f d gis d b'( d, f) e f d gis d |
+  gis d( f e) f d gis d b' d,( f e) f d gis d |
   c( e a) b c a e d c( e a) b c a fis e |
   dis( fis dis) fis a fis a fis dis( fis dis) fis a fis a fis |
   g( fis e) g fis g a fis g fis e d c b a g |
