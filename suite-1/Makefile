@@ -21,5 +21,8 @@ $(BUILDDIR)/$(PDF): $(SOURCES)
 $(BUILDDIR)/$(PREVIEW_PDF): $(SOURCES)
 	$(LILYPOND) $(LILYPONDPREVIEWFLAGS) -o $(BUILDDIR)/$(PREVIEW_PDF) $(MAIN_SOURCE)
 
+watch:
+	fswatch -o *.ly | xargs -n1 -I{} make preview
+
 clean:
 	$(RM) $(BUILDDIR)/*.pdf $(BUILDDIR)/*.midi
