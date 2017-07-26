@@ -31,7 +31,7 @@ prelude = \context Staff \relative c {
   \barNumberCheck #20
   cis a' e' fis g e fis g cis,, a' e' fis g e fis g |
   c,, a' d e fis d e fis c, a' d e fis d e fis |
-  c, a' d fis a cis d8\fermata d16 a, b c d e fis g |
+  c, a' d fis a cis d8\fermata~ d16 a, b c d e fis g |
   a fis d e fis g a b c a fis g a b c d |
   ees d cis d d c b c c a fis e d a b c |
   \barNumberCheck #25

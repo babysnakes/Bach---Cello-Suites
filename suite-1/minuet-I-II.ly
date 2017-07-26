@@ -34,7 +34,7 @@ minuetI = \context Staff \relative c' {
     \barNumberCheck #20
     g8 e fis d d, a' |
     d fis a c b d |
-    e, g b d c e |
+    e, g b d c e | % the last note is d in anna magdalena's copy!
     d[ fis, g b,] d, fis' |
     <g, g'>2. |
   }

@@ -9,13 +9,13 @@ gigue = \context Staff \relative c' {
   \partial 8 d,8 |
   \repeat volta 2 {
     g d e e c d |
-    d-. g-. d-. b-. g-. d'-. |
+    d-. g-. d-. b g d' |
     g16 a b8 a a16 b c8 b |
     <g, d' b'>4.\trill <d' a'>4 a'8 |
     \barNumberCheck #5
     b fis g g e g |
     a e fis fis d fis |
-    g-. b-. g-. e-. b-. d-. |
+    g-. b-. g-. e b d |
     cis e a a,4 e'8 |
     f e g g f a |
     \barNumberCheck #10
@@ -50,6 +50,6 @@ gigue = \context Staff \relative c' {
     b g16 a b8 dis, e c' |
     e, fis d' fis, g e' |
     d, e16 fis g a b8 g fis |
-    g d b g4 s8 |
+    g d b g4\fermata s8 |
   }
 }

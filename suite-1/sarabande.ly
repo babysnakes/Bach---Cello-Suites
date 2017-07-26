@@ -28,7 +28,7 @@ sarabande = \context Staff \relative c' {
     <b' d!>8. e32 fis <c, g' e'>8. fis'!16 g a b c |
     gis, d'' c b <a, e' c'>8. b'16 a g! fis e |
     \barNumberCheck #15
-    << { d4 d16 e fis g a c b g } \\ { r16 b, c a b s16 s8 s4 } >> |
+    << { d4~ d16 e fis g a c b g } \\ { r16 b, c a b s16 s8 s4 } >> |
    d16 g a fis g4 g, |
   }
 }

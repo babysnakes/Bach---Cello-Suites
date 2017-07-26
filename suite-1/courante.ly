@@ -15,7 +15,7 @@ courante = \context Staff \relative c' {
     \barNumberCheck #5
     c b c a c b c a d, c' b a |
     b a b g b a b g c, b' a g |
-    fis a d fis, g8  b, d, fis' |
+    fis a d d, g8  b, d, fis' |
     <g g,>4. b16 a g fis e d |
     e'8 cis a b16 cis d fis, e d |
     \barNumberCheck #10
