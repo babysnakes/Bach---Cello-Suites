@@ -41,7 +41,7 @@ courante = \context Staff \relative c' {
     g8 e e, g'16 fis a g fis e |
     \barNumberCheck #25
     f e f a f e f a c b c a |
-    dis4 dis16 c! b a g fis a dis,! |
+    dis4~ dis16 c! b a g fis a dis,! |
     g,8 b' a16 g fis e b8 dis |
     e,4. e'16 fis g a b c |
     d!8 f, b, e16 f g f e d |
